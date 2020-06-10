@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evis</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="main-body">
+<aside class="main-aside main-aside--close">
+  <div class="main-aside__container">
+    <a href="#" class="main-aside__logo">
+      <svg class="main-aside__logo-image">
+        <use xlink:href="img/svg/sprite.svg#evis-logo"/>
+      </svg>
+    </a>
+    <div class="main-aside__mobile">
+      <a href="#" class="main-aside__logo-mob">
+        <svg class="main-aside__logo-mob-image">
+          <use xlink:href="img/svg/sprite.svg#evis-logo-white"/>
+        </svg>
+      </a>
+      <a href="#" class="main-aside__close-mob">
+        <svg class="main-aside__logo-close-image">
+          <use xlink:href="img/svg/sprite.svg#close"/>
+        </svg>
+      </a>
+    </div>
+
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">Продукция</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">Услуги</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">Клиентам</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">Партнёрам</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">О компании</span>
+          </a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span class="navigation__link-text">Контакты</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-aside__info">
+      <a href="#" class="main-aside__address">
+        <svg class="main-aside__address-icon">
+          <use xlink:href="img/svg/sprite.svg#place"/>
+        </svg>
+        <span class="main-aside__address-text">Украина, Кривой Рог, ул.Новосадовая-Отрадная, 143</span>
+      </a>
+      <a href="tel:+380671234567" class="main-aside__tel">
+        <span class="main-aside__tel-text">Тел. +38 (067) 123-45-67</span>
+      </a>
+      <a href="mailto:info@evisgroup.com.ua" class="main-aside__email">
+        <span class="main-aside__email-text">info@evisgroup.com.ua</span>
+      </a>
+    </div>
+
+    <div class="main-aside__footer">
+      <span class="main-aside__facebook-text">ООО «Евис Групп»</span>
+      <a href="#" class="main-aside__facebook">
+        <svg class="main-aside__facebook-icon">
+          <use xlink:href="img/svg/sprite.svg#facebook"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<section class="order-form order-form--close">
+  <h2 class="order-form__headline visually-hidden">Форма заказа</h2>
+  <div class="order-form__container">
+    <h3 class="order-form__headline">Отправить заявку</h3>
+    <a href="#" class="order-form__close">
+      <svg class="order-form__close-icon">
+        <use xlink:href="img/svg/sprite.svg#close2"/>
+      </svg>
+    </a>
+    <ul class="order-form__list">
+      <li class="order-form__item">
+        <a href="№" class="order-form__item-link">
+          <img src="img/product/product-1.jpg" alt="" class="order-form__item-link-img">
+        </a>
+        <div class="order-form__item-container">
+          <a href="#" class="order-form__item-headline">Проволока стальная сварочная омедненная</a>
+          <div class="order-form__description">
+            <ul class="order-form__item-list-options">
+              <li class="order-form__item-option">Диаметр: 1 мм</li>
+              <li class="order-form__item-option">Упаковка: 18 кг</li>
+            </ul>
+            <p class="order-form__item-price">1234 грн/шт</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <form action="formaction" class="order-form__form">
+      <h4 class="order-form__form-headline">Заполните Ваши данные</h4>
+      <div class="order-form__form-left">
+        <label class="order-form__form-field">
+          <span class="order-form__form-label">Ваше имя</span>
+          <input type="text" class="order-form__form-input">
+        </label>
+        <label class="order-form__form-field">
+          <span class="order-form__form-label">Телефон или e-mail</span>
+          <input type="text" class="order-form__form-input">
+        </label>
+        <label class="order-form__form-field">
+          <span class="order-form__form-label">Количество для заказа, шт</span>
+          <input type="text" class="order-form__form-input">
+        </label>
+      </div>
+      <div class="order-form__form-right">
+        <p class="order-form__form-label-textarea">Детали заявки</p>
+        <textarea name="details" id="details" class="order-form__form-textarea"></textarea>
+      </div>
+      <button class="order-form__form-submit" type="submit">Заказать</button>
+    </form>
+  </div>
+</section>
+
+<section class="main-container main-container--card">
+  <h2 class="main-container__headline visually-hidden">Главный контейнер</h2>
+  <header class="main-header">
+    <section class="breadcrumb">
+      <h2 class="breadcrumb__headline visually-hidden">Хлебные крошки</h2>
+      <ul class="breadcrumb__list">
+        <li class="breadcrumb__item">
+          <a href="#" class="breadcrumb__link">
+            Главная
+            <span class="breadcrumb__link-circle"></span>
+          </a>
+        </li>
+        <li class="breadcrumb__item">
+          <span class="breadcrumb__text">Продукция</span>
+        </li>
+      </ul>
+    </section>
+    <a href="#" class="main-header__logo">
+      <svg class="main-header__logo-icon" >
+        <use xlink:href="img/svg/sprite.svg#evis-logo-white"/>
+      </svg>
+    </a>
+    <a href="#" class="main-header__burger">
+      <svg class="main-header__burger-icon">
+        <use xlink:href="img/svg/sprite.svg#burger"/>
+      </svg>
+    </a>
+    <a href="tel:+380671234567" class="main-header__phone">
+      <svg class="main-header__phone-icon">
+        <use xlink:href="img/svg/sprite.svg#phone"/>
+      </svg>
+      <span class="main-header__phone-text">+38 (067) 123-45-67</span>
+    </a>
+  </header>
+
+  <section class="product">
+    <h2 class="product__headline visually-hidden">О товаре</h2>
+    <div class="product__container">
+      <div class="product__info">
+        <div class="product__info-container">
+          <h3 class="product__info-headline">Проволока стальная сварочная омедненная</h3>
+          <p class="product__info-text">Омедненная и полированная сварочная проволока сплошного сечения изготовлена специально для автоматической и механизированной сварки в среде защитных газов углеродистых и низколегированных конструкционных сталей с пределом текучести до 420 МПа. Данная сварочная проволока широко применяется в быту, при частных сварочных работах. Также нашла широкое применение в ремонте автомобилей.</p>
+          <div class="product__info-order">
+            <p class="product__info-price">1234 грн</p>
+            <button class="product__info-order-button">Заказать</button>
+          </div>
+          <div class="product__info-option">
+            <p class="product__info-option-text">Диаметр, мм</p>
+            <div class="product__info-option-radio-container">
+              <input id="diametr0.8" type="radio" name="Диаметр" class="product__info-option-radio visually-hidden" />
+              <label for="diametr0.8" class="product__info-option-label">0.8</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="diametr0.9" type="radio" name="Диаметр" class="product__info-option-radio visually-hidden" />
+              <label for="diametr0.9" class="product__info-option-label">0.9</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="diametr1" type="radio" checked="checked" name="Диаметр" class="product__info-option-radio visually-hidden" />
+              <label for="diametr1" class="product__info-option-label">1</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="diametr1.2" type="radio" name="Диаметр" class="product__info-option-radio visually-hidden" />
+              <label for="diametr1.2" class="product__info-option-label">1.2</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="diametr1.5" type="radio" name="Диаметр" class="product__info-option-radio visually-hidden" />
+              <label for="diametr1.5" class="product__info-option-label">1.5</label>
+            </div>
+          </div>
+          <div class="product__info-option">
+            <p class="product__info-option-text">Упаковка, кг</p>
+            <div class="product__info-option-radio-container">
+              <input id="pack5" type="radio" name="Упаковка" class="product__info-option-radio visually-hidden" />
+              <label for="pack5" class="product__info-option-label">5</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="pack18" type="radio" checked="checked" name="Упаковка" class="product__info-option-radio visually-hidden" />
+              <label for="pack18" class="product__info-option-label">18</label>
+            </div>
+            <div class="product__info-option-radio-container">
+              <input id="pack250" type="radio" name="Упаковка" class="product__info-option-radio visually-hidden" />
+              <label for="pack250" class="product__info-option-label">250</label>
+            </div>
+          </div>
+          <div class="product__table-wrapper">
+            <h4 class="product__info-tth-headline">Технические характеристики</h4>
+            <table class="product__info-tth-table">
+              <tr>
+                <td>Номинальный диаметр, мм</td>
+                <td>0.5 - 0.75</td>
+              </tr>
+              <tr>
+                <td>Предельные отклонения по диаметру (нормальной точности)</td>
+                <td>-0.04</td>
+              </tr>
+              <tr>
+                <td>Временное сопротивление разрыву, Н/мм (кгс/мм2)</td>
+                <td>290-490 (30-50)</td>
+              </tr>
+              <tr>
+                <td>Относительное удлинение, %, не менее</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Вид поставки - мотки массой, кг</td>
+                <td>малые мотки свободной намотки 20-40</td>
+              </tr>
+              <tr>
+                <td>Сталь</td>
+                <td>Крепкая</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h4 class="product__info-description-headline">Нормативные документы</h4>
+        <a href="#" class="product__info-description-text">ТУ 12-4-3359-2020. Прокат термомеханически упрочненный класса А600С для армирования железобетонных конструкций. (6 Mb)</a>
+        <a href="#" class="product__info-description-text">Сертификат соответствия (2 Mb)</a>
+      </div>
+      <img src="img/product/product-1.jpg" alt="" class="product__main-image">
+    </div>
+  </section>
+
+  <section class="another-product">
+    <h2 class="another-product__headline">Другая продукция</h2>
+  
+    <section class="category-list">
+      <h2 class="category-list__headline visually-hidden">Наши товары</h2>
+      <ul class="category-list__list">
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+        <li class="category-list__item">
+          <div class="category-list__item-container">
+            <a href="/card.html" class="category-list__item-photo-link">
+              <img src="img/catalog-list/catalog-list-1.jpg" alt="" class="category-list__item-photo" />
+            </a>
+            <div class="category-list__item-text-container">
+              <a href="/card.html" class="category-list__item-link">Проволока общего назначения термически необработанная</a>
+              <ul class="category-list__features-list">
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Диаметр, мм: 0.4, 0.5, 0.52, 0.56, 0.6-1.0</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Сталь: 1006</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">ГОСТ: 3282-74</span>
+                </li>
+                <li class="category-list__features-item">
+                  <span class="category-list__features-item-text">Упаковка: 5-50 кг</span>
+                </li>
+              </ul>
+            </div>
+            <a href="/card.html" class="category-list__item-button">Подробнее</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </section>
+
+  <section class="consultation">
+    <h2 class="consultation__headline visually-hidden">Проконсультируйтесь у нас</h2>
+    <div class="consultation__info">
+      <h3 class="consultation__info-headline">Консультация</h3>
+      <p class="consultation__info-text">Менеджеры компании с радостью ответят на ваши вопросы, произведут все расчеты и подготовят индивидуальное коммерческое предложение. </p>
+    </div>
+    <div class="consultation__phone">
+      <a href="tel:+380671234567" class="consultation__phone-link">+38 (067) 123-45-67</a>
+      <a href="#" class="consultation__phone-order">
+        <span class="consultation__phone-order-text">Заказать звонок</span>
+        <svg class="consultation__phone-order-icon">
+          <use xlink:href="img/svg/sprite.svg#next"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <h2 class="main-footer__headline visually-hidden">Подвал сайта</h2>
+    <nav class="main-footer__nav">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">Продукция</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">Услуги</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">Клиентам</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">Партнёрам</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">О компании</span>
+          </a>
+        </li>
+        <li class="main-footer__item">
+          <a href="#" class="main-footer__link">
+            <span class="main-footer__link-text">Контакты</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-footer__info">
+      <a href="#" class="main-footer__address">
+        <svg class="main-footer__address-icon">
+          <use xlink:href="img/svg/sprite.svg#place"/>
+        </svg>
+        <span class="main-footer__address-text">Украина, Кривой Рог, ул.Новосадовая-Отрадная, 143</span>
+      </a>
+      <a href="tel:+380671234567" class="main-footer__tel">
+        <span class="main-footer__tel-text">Тел. +38 (067) 123-45-67</span>
+      </a>
+      <a href="mailto:info@evisgroup.com.ua" class="main-footer__email">
+        <span class="main-footer__email-text">info@evisgroup.com.ua</span>
+      </a>
+      <a href="#" class="main-footer__facebook">
+        <svg class="main-footer__facebook-icon">
+          <use xlink:href="img/svg/sprite.svg#facebook"/>
+        </svg>
+      </a>
+    </div>
+    <p class="main-footer__copyright">© 2020 — ООО «Евис Групп»</p>
+  </footer>
+</section>
+
+
+<section class="contact-us contact-us--close">
+  <h2 class="contact-us__headline visually-hidden">Свяжитесь с нами</h2>
+  <div class="contact-us__pop-up">
+    <h3 class="contact-us__headline">Свяжитесь с нами</h3>
+    <a href="#" class="contact-us__close">
+      <svg class="contact-us__close-icon">
+        <use xlink:href="img/svg/sprite.svg#close"/>
+      </svg>
+    </a>
+    <form action="#" class="contact-us__form">
+      <label class="contact-us__label">
+        <span class="contact-us__label-text">Ваше имя</span>
+        <input type="text" class="contact-us__input">
+      </label>
+      <label class="contact-us__label">
+        <span class="contact-us__label-text">Телефон</span>
+        <input type="text" class="contact-us__input">
+      </label>
+      <label class="contact-us__label">
+        <span class="contact-us__label-text">E-mail</span>
+        <input type="text" class="contact-us__input">
+      </label>
+      <button type="submit" class="contact-us__submit">Перезвоните мне</button>
+    </form>
+  </div>
+</section>
+
+<script src="js/main.js"></script>
+<script>
+    svg4everybody();
+</script>
+
+</body>
+</html>
